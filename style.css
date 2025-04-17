@@ -5,7 +5,7 @@
     --text-secondary: #666666;
     --accent-color: #2d2d2d;
     --hero-gradient-start: #062058;
-    --hero-gradient-end: #cb1dd8;
+    --hero-gradient-end: #9d35a4;
     --card-bg: #ffffff;
     --card-shadow: rgba(0,0,0,0.1);
     --nav-bg: rgba(255, 255, 255, 0.9);
@@ -13,6 +13,7 @@
     --button-bg: #062058;
     --button-hover: #1d4ed8;
     --button-text: #ffffff;
+    --black-text:black;
 }
 
 [data-theme="dark"] {
@@ -30,6 +31,7 @@
     --button-bg: #ffffff;
     --button-hover: #e5e5e5;
     --button-text: #000000;
+    --black-text:white;
 }
 
 * {
@@ -88,7 +90,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #062058;
+    color:var(--black-text);
 }
 
 .theme-toggle {
@@ -312,7 +314,7 @@ body {
 
 .product-price {
     font-weight: 600;
-    color: #2d2d2d;
+    color: var(--black-text);
 }
 
 /* Enhanced Contact Section */
@@ -505,14 +507,9 @@ body {
         gap: 2rem;
     }
 
-    .contact-info {
-        text-align: center;
-    }
+     
 
-    .contact-details {
-        justify-content: center;
-    }
-
+    
     .navbar {
         padding: 1rem;
     }
